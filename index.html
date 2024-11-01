@@ -15,7 +15,7 @@
 					<img src="./images/logo.png" alt="logo" width="380" height="508" />
 					<h1>ODIN</h1>
 				</div>
-				<div class="footer">
+				<div class="appreciation">
 					Photo by
 					<a
 						href="https://unsplash.com/@mischievous_penguins?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
@@ -28,7 +28,117 @@
 					>
 				</div>
 			</div>
-			<div class="right">Right</div>
+
+			<div class="right">
+				<div class="form-container">
+					<header class="header">
+						<h2>Sign up</h2>
+						<p>
+							This is not a real online service! You know you need something
+							like this in your life to help you realize your deepest dreams.
+							Sign up
+							<em>now</em> to get started.
+						</p>
+						<p>You <em>know</em> you want to. Let's do this!</p>
+					</header>
+
+					<form action="#">
+						<div class="form-row">
+							<div class="form-col">
+								<label for="first-name">
+									first name <span aria-label="required">*</span>
+								</label>
+								<input
+									type="text"
+									id="first-name"
+									name="first-name"
+									pattern="^[^0-9]+$"
+									size="20"
+									minlength="3"
+									maxlength="20"
+									placeholder=""
+									required />
+							</div>
+							<div class="form-col">
+								<label for="last-name">
+									last name <span aria-label="required">*</span>
+								</label>
+								<input
+									type="text"
+									id="last-name"
+									name="last-name"
+									pattern="^[^0-9]+$"
+									size="20"
+									minlength="3"
+									maxlength="20"
+									placeholder=""
+									required />
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-col">
+								<label for="email">
+									email <span aria-label="required">*</span>
+								</label>
+								<input
+									type="email"
+									id="email"
+									name="email"
+									size="20"
+									maxlength="50"
+									placeholder=""
+									required />
+							</div>
+							<div class="form-col">
+								<label for="phone-number">phone number</label>
+								<input
+									type="tel"
+									id="phone-number"
+									size="20"
+									maxlength="20"
+									name="phone-number"
+									value=""
+									placeholder="" />
+							</div>
+						</div>
+
+						<div class="form-row">
+							<div class="form-col">
+								<label for="password">
+									password <span aria-label="required">*</span>
+								</label>
+								<input
+									type="password"
+									id="password"
+									name="password"
+									pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&-_])[A-Za-z\d@$!%*?&-_]{8,}$"
+									placeholder=""
+									required />
+							</div>
+							<div class="form-col">
+								<label for="confirm-password">
+									confirm password <span aria-label="required">*</span>
+								</label>
+								<input
+									type="password"
+									id="confirm-password"
+									name="confirm-password"
+									pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&-_])[A-Za-z\d@$!%*?&-_]{8,}$"
+									placeholder=""
+									required />
+							</div>
+						</div>
+
+						<div class="form-row">
+							<input type="submit" value="Sign up" />
+						</div>
+					</form>
+
+					<footer class="footer">
+						<p>Already have an account? <a href="#">Log in</a></p>
+					</footer>
+				</div>
+			</div>
 		</div>
 	</body>
 </html>
